@@ -1,0 +1,37 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* may change color scheme late testing for now
+feels complete also need to take screen shot of results and create word with all info
+also need to complete the github pages portion of the assignment*/
+h1, h2, h3, h4 {
+    background-color: #79A7D3;
+    color: #8A307F;
+    border: 1px solid;
+    border-color: #D6A800;
+    padding: 10px;
+}
+
+a:link {
+    color: #00539C;
+}
+a:hover {
+    text-decoration: underline;
+    background-color: #D6A800;
+    font-weight: bold;
+}
+
+a:visited {
+  color: #8A307F;
+}
