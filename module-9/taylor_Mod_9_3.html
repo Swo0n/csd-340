@@ -1,0 +1,37 @@
+<!-- Juan Taylor Assignment 2.2  Building a Web Page Exercise, Part 2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta name = "description" content = "Learning how to build a web page">
+    <meta name = "keywords" content = "html, web pages, learning">
+    <meta name = "author" content = "Juan Taylor">
+    <meta name = "robots" content = "nofollow">
+    <link rel="stylesheet" href="taylor_Mod_2_2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script>
+        var firstVar = "opportunity";
+        var secondVar = "winning";
+        var thirdVar = "shine";
+        var fourthVar = "monsters";
+    </script>
+</head>
+
+<body>
+    <div id = "container"> 
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <h2>Movie Quotes</h2>
+        <p>"Luck is where <span id = "opportunity">_________</span> meets preparation.” - Denzel Washington</p>
+        <p>“Nobody is gonna hit as hard as life, but it ain't how hard you can hit. It's how hard you can get hit and keep moving forward. It's how much you can take, and keep moving forward. That's how <span id = "winning">_________</span> is done.” - Sylvester Stallone</p>
+        <p>“Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure. It is our light, not our darkness, that most frightens us. We ask ourselves, who am I to be brilliant, gorgeous, talented and fabulous? Actually, who are you not to be? You are a child of God. Your playing small doesn't serve the world. We were born to make manifest the glory of God that is within us. It's not just in some of us; it's in everyone. And as we let our own light <span id = "shine">_________</span>, we unconsciously give other people permission to do the same. As we are liberated from our own fear, our presence automatically liberates others.” - Timo Cruz</p>
+        <p>“If we are not <span id = "monsters">_________</span>, we're food, and I could never be food. How do you think we survived all this time?” - Kane Robinson</p>
+        <span><button type="button" onclick="document.getElementById('opportunity').innerHTML = firstVar">One</button><br></span>
+        <span><button type="button" onclick="document.getElementById('winning').innerHTML = secondVar">Two</button><br></span>
+        <span><button type="button" onclick="document.getElementById('shine').innerHTML = thirdVar">Three</button><br></span>
+        <span><button type="button" onclick="document.getElementById('monsters').innerHTML = fourthVar">Four</button><br></span>
+    </div>
+</body>
+
+</html>
