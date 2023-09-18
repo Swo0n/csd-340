@@ -1,0 +1,49 @@
+<!-- Juan Taylor Assignment 10.3  JavaScript Exercise, Part 2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta name = "description" content = "Learning how to build a web page">
+    <meta name = "keywords" content = "html, web pages, learning">
+    <meta name = "author" content = "Juan Taylor">
+    <meta name = "robots" content = "nofollow">
+    <link rel="stylesheet" href="taylor_Mod_10.3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script>
+        var image = document.querySelector('#first');
+        var image2 = document.querySelector('#second');
+        function imageChange(image) {
+            image.src = 'images/end.jpg';
+        };
+        function imageChange2(image2) {
+            image2.src = 'images/earth_at_night.jpg';
+        };
+
+        function textColor(id) {
+            if (id === "red") {
+                document.getElementById("red").style.color = "red";
+            } else if (id === "blue") {
+                document.getElementById("blue").style.color = "blue";
+            } else {
+                document.getElementById("green").style.color = "green";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id = "container"> 
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+        <img src = "images/countdown.jpg" alt = "start" id = "first" onclick = "imageChange(this)"></img> 
+        <br> <br> 
+        <p id = "red" onclick = "textColor(this.id)">Click your mouse on the image to change it.</p>
+        <p id = "blue" onclick = "textColor(this.id)">You can also click the text to change its color</p>
+        <img src = "images/earth.jpg" alt = "earth_daytime" id = "second" onclick = "imageChange2(this)"></img>
+        <br>
+        <p id = "green" onclick = "textColor(this.id)">Plant a Tree. Keep Earth Green!</p>
+    </div>
+</body>
+
+</html>
