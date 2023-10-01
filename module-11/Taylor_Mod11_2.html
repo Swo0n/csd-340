@@ -1,0 +1,55 @@
+<!-- Juan Taylor Assignment 10.3  JavaScript Exercise, Part 2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta name = "description" content = "Learning how to build a web page">
+    <meta name = "keywords" content = "html, web pages, learning">
+    <meta name = "author" content = "Juan Taylor">
+    <meta name = "robots" content = "nofollow">
+    <link rel="stylesheet" href="taylor_Mod_10.3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script>
+        var itemList = [];
+        function addItem() {
+            alert("Item added!");
+            // document.getElementById("add").innerHTML = "Item added!";
+            itemList.push(document.getElementById("inputItem").value);
+        }
+
+        function removeItem() {
+            alert("Last Entry Removed!");
+            itemList.pop();
+        }
+
+        function displayItems() {
+            alert("Item lists displayed!");
+            display_items.innerHTML = "";
+            let iterator = itemList.values();
+            for (let elements of iterator) {
+                let index = itemList.indexOf(elements) + 1;
+                display_items.innerHTML += "Item " + index + " = " + elements + "<br>";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id = "container"> 
+        <h1>Assignment 11.2: JavaScript - Part 3</h1>
+        <h3> To Do List</h3>
+        <p style = "color: blueviolet;">Click Add to enter items into the To Do List.</p> 
+        <p>Click the  Display button to see the current items listed. </p>
+        <p style = "color: blueviolet;">Click the Delete Last Entry button to remove the last item in the list.</p>
+        <input type="text" id = "inputItem">
+        <button id = "add" onclick = "addItem()">Add</button>
+        <button id = "remove" onclick = "removeItem()">Delete Last Entry</button>
+        <button id = "display" onclick = "displayItems()">Display</button>
+        <br><br><br><br><br>
+        <span id = "display_items"></span>
+    </div>
+</body>
+
+</html>
