@@ -1,0 +1,55 @@
+<!-- Juan Taylor Assignment 12.2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="taylor_Mod12_2.css">
+    <script>
+        var bookTitles = ["The Dark Tower I: The Gunslinger", "The Name of the Wind", "American Gods", "A Wizard of Earthsea", "Dune", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "Shadow of the Hegemon", "The Dark Tower IV: Wizard and Glass", "Unwind"];
+
+        function topOrder() {
+            display_titles.innerHTML = "";
+            let iterator = bookTitles.values();
+            for (let elements of iterator) {
+                let index = bookTitles.indexOf(elements) + 1;
+                display_titles.innerHTML += "<br>" + index + ". " + elements + "<br>";
+            }
+        }
+
+        function bottomOrder() {
+            display_titles.innerHTML = "";
+            for (var i = bookTitles.length - 1; i > -1; i--) {
+                let index = bookTitles.indexOf(bookTitles[i]) + 1;
+                display_titles.innerHTML += "<br>" + index + ". " + bookTitles[i] + "<br>";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div id = "container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+        <div id = "left">
+            <h3>Top 10 Favorite Books</h3>
+            <button id = "top" onclick = "topOrder()">Top to Bottom</button>
+            <button id = "bottom" onclick = "bottomOrder()">Bottom to Top</button> <br><hr>
+            <span id = "display_titles"></span>
+        </div>
+        <div id = "right">
+            <h3>5 Things I've Learned Since the Course Started</h3>
+            <ul>
+                <li>I learned that html has six levels of headings</li>
+                <li>There is a sup element to make character superscript for the suffixes in dates.</li>
+                <li>The strong element indicates when text content has a strong significance and will show the text in bold</li>
+                <li>It is possible to put a list inside of a list creating nested lists</li>
+                <li>The a element has an href attribute that enables users to transverse a specified web page</li>
+            </ul>
+        </div>
+        <div>
+            <a href = "../index.html">Back to Landing Page</a>
+        </div>
+    </div>
+
+
+</body>
+</html>
